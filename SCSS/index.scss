@@ -1,0 +1,86 @@
+$dark2: #3f4143;
+$dark1: #1c1919;
+$dark: #5f6062;
+$warning: #fd9e2b;
+$borderline: rgba(226, 223, 223, 0.65);
+$danger: #cb6262;
+$success: #90cb62;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: $warning;
+}
+
+
+.container {
+    background-image: url(../Assets/pic.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .calculator {
+        background-color: $dark1;
+        height: 710px;
+        width: 484px;
+        border-radius: 21px;
+
+        .top-side{
+            background-color: $dark1;
+            height: 64px;
+            display: flex;
+            padding: 0 0 0 0;
+
+            .top-colors {
+                border-radius: 100%;
+                width: 19px;
+                height: 19px;
+                margin-top: 18px;
+                margin-right: 22px ;
+
+            }
+
+            .bg-red {
+                background-color: $danger;
+                margin-left: 45px;
+            }
+            .bg-warning {
+                background-color: $warning;
+            }
+            .bg-success {
+                background-color: $success;
+            }
+        }
+    
+        .display-zone {
+            background-color: $dark1;
+            height: 136px;
+            border-top: 1px solid $borderline;
+            border-bottom:1px solid $borderline;
+        
+        }
+
+        .keys {
+            background-color: red;
+            height: 510px;
+            
+
+            .row {
+                height: 94px;
+                width: 133px;
+            }
+        }
+    }
+}
+
+.top-side {
+    display: flex;
+}
